@@ -33,7 +33,7 @@ Connect Robotiq gripper to your PC with a USB convert line, and do not forget to
 
 UR10:
 
-```roslaunch ur_robot_driver ur10_bringup.launch robot_ip:192.168.1.102```
+```roslaunch ur_robot_driver ur10_bringup.launch robot_ip:=192.168.1.102```
 
 ```roslaunch ur10_moveit_config motion_planning_execution.launch```
 
