@@ -69,6 +69,16 @@ package.xml:
 
 ![alt text](https://github.com/BoyangZhangFromHKUST/UR10-Robotiq2F140/blob/main/pic/Screenshot%20from%202023-07-06%2010-30-25.png)
 
+#2. **pymodbus.serial.sync** vs. **pymodbus.serial**
+![alt_text](https://github.com/BoyangZhangFromHKUST/UR10-Robotiq2F140/blob/main/pic/Screenshot%20from%202023-07-06%2010-40-03.png)
+
+This problem is around the version of pymodbus: if your pymodbus version is 3.X (recommand 3.4), you should use pymodbus.serial; if your pymodbus version is 2.X.X (recommand 2.5.3), you should use pymodbus.serial.sync
+
+#3. Communication problem: `Modbus Error: [Input/Output] Modbus Error: [Invalid Message] No response received, expected at least 2 bytes (0 received)`
+
+You should check your port directly, which may not be /dev/ttyUSB0. I change my port to /dev/ttyUSB1 and it works.
+
+![alt_text](https://github.com/BoyangZhangFromHKUST/UR10-Robotiq2F140/blob/main/pic/Screenshot%20from%202023-07-06%2010-23-18.png)
 
 ## Summary
 In the first stage, we just attempt to find and solve problems in the process of using ROS noetic. In the next stage, we will try to control the arm and gripper together. In the third stage, we will try to integrate them into a launch file. In the fourth stage, we will try using ROS2 to control them!
