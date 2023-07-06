@@ -63,7 +63,11 @@ You should rectify the CMakeList and package.xml to make the msg file valid.
 
 CMakeList:
 
+https://github.com/BoyangZhangFromHKUST/UR10-Robotiq2F140/blob/main/pic/Screenshot%20from%202023-07-06%2010-29-42.png
+
 package.xml:
+
+https://github.com/BoyangZhangFromHKUST/UR10-Robotiq2F140/blob/main/pic/Screenshot%20from%202023-07-06%2010-30-25.png
 
 
 ## Summary
